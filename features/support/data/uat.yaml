@@ -1,0 +1,9 @@
+content_type: "application/json;charset=utf-8"
+create_user:
+    body: "{\"name\":\"test\", \"salary\":\"numero\", \"age\":\"valor\"}"
+
+code:
+    ok: '200'
+    created: '201'
+    bad_request: '400'
+    internal_server_error: '500'
