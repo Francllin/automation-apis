@@ -1,6 +1,6 @@
 Quando('deletar o usuário') do
   step 'efetuar o cadastro do novo usuário'
-  @response = deletar_usuario(JSON.parse(@response.body)['data']['id'])
+  @response = delete_user(JSON.parse(@response.body)['data']['id'])
 end
 
 Então('validar que o usuário foi deletardo com sucesso') do

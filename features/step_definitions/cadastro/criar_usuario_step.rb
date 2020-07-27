@@ -3,7 +3,7 @@ Quando('efetuar o cadastro do novo usuário') do
   @body['name'] = gerar_primeiro_nome
   @body['salary'] = gerar_numero(4).to_s
   @body['age'] = gerar_numero(2).to_s
-  @response = create(@body.to_s.gsub('=>', ':'))
+  @response = create_user(@body.to_s.gsub('=>', ':'))
 end
 
 Então('validar o cadastro realizado com sucesso') do
